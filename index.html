@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI vs. UX: Understanding the Difference with Examples | Design & Tech Insights</title>
+  <meta name="description" content="Discover how beautiful interfaces and seamless user experiences work together to create digital products people love. Complete with comparison matrices, timelines, and real-world examples.">
+  <meta name="keywords" content="UI vs UX, User Interface, User Experience, Product Design, Design Process, Naina Technologies, Figma">
+  <meta name="author" content="Naina Technologies">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="UI vs. UX: Understanding the Difference with Examples">
+  <meta property="og:description" content="Discover how beautiful interfaces and seamless user experiences work together to create digital products people love.">
+  <meta property="og:image" content="images/ui-vs-ux-hero.jpg">
+  <meta property="og:type" content="article">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Reading Progress Indicator -->
+  <div id="reading-progress-bar"></div>
+
+  <!-- 1. HEADER (Clean White Navbar, Larger Logo, Electric Blue Active States, Coral CTA) -->
+  <header id="header-wrapper-bg">
+    <div id="header-wrapper">
+      <div class="brand-logo-area">
+        <a href="index.html" class="logo-link" id="site-logo" title="Naina Technologies">
+          <img src="images/logo.png" alt="Naina Technologies Logo" class="site-logo-img">
+        </a>
+      </div>
+
+      <!-- Header Search Box -->
+      <div class="header-search">
+        <form class="search-form" onsubmit="event.preventDefault();">
+          <input type="text" class="search-input" id="header-search-input" placeholder="Search insights...">
+          <button type="submit" class="search-submit-btn" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="header-nav">
+        <ul class="nav-links">
+          <li><a href="#intro" class="nav-link active">Home</a></li>
+          <li><a href="#ui-vs-ux" class="nav-link">UI vs UX</a></li>
+          <li><a href="#design-process" class="nav-link">Process</a></li>
+          <li><a href="#real-world-examples" class="nav-link">Examples</a></li>
+          <li><a href="#comparison-matrix" class="nav-link">Matrix</a></li>
+          <li><a href="#interactive-quiz" class="nav-link">Quiz</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn-header-cta" id="open-export-modal-btn">
+            <i class="fa-brands fa-blogger"></i> Blogger Code
+          </button>
+          <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-drawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#intro" class="active">Home</a></li>
+        <li><a href="#ui-vs-ux">UI vs UX Comparison</a></li>
+        <li><a href="#design-process">5-Step Design Process</a></li>
+        <li><a href="#real-world-examples">Real-World Examples</a></li>
+        <li><a href="#comparison-matrix">Comparison Matrix</a></li>
+        <li><a href="#interactive-quiz">Interactive Quiz</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (Navy-to-Blue-to-Purple Gradient with Floating UI/UX Elements) -->
+  <section class="brandx-hero-banner" id="intro">
+    <div class="hero-grid">
+      <!-- Left Column: Copy & Actions -->
+      <div class="hero-content">
+        <div class="hero-pill-badge">
+          <i class="fa-solid fa-sparkles"></i> Product Design Masterclass &bull; Naina Technologies
+        </div>
+        <h1 class="hero-title">UI vs. UX: Understanding the Difference with Examples</h1>
+        <p class="hero-subtitle">
+          Discover how beautiful interfaces and seamless user experiences work together to create digital products people love.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#ui-vs-ux" class="btn-hero btn-hero-primary">
+            <i class="fa-solid fa-book-open"></i> Read the Article
+          </a>
+          <a href="#comparison-matrix" class="btn-hero btn-hero-secondary">
+            <i class="fa-solid fa-table-columns"></i> Explore Comparison Matrix
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Subtle UI/UX Mockup & Floating Cards -->
+      <div class="hero-visual-area">
+        <div class="hero-mockup-stack">
+          <!-- Floating UI Card (Top Right) -->
+          <div class="floating-card-ui">
+            <i class="fa-solid fa-palette" style="font-size: 16px;"></i>
+            <div>
+              <strong>UI Element</strong><br>
+              <span style="opacity: 0.85; font-size: 11px;">Color System &bull; Micro-interactions</span>
+            </div>
+          </div>
+
+          <!-- Main Interactive Card -->
+          <div class="hero-main-card">
+            <div class="mockup-header-bar">
+              <div class="mockup-dots">
+                <span class="mockup-dot dot-red"></span>
+                <span class="mockup-dot dot-yellow"></span>
+                <span class="mockup-dot dot-green"></span>
+              </div>
+              <span class="mockup-badge">product_flow.fig</span>
+            </div>
+            <img src="images/ui-vs-ux-hero.jpg" alt="UI vs UX Mockup Preview" class="mockup-preview-img">
+          </div>
+
+          <!-- Floating UX Card (Bottom Left) -->
+          <div class="floating-card-ux">
+            <i class="fa-solid fa-route" style="font-size: 16px;"></i>
+            <div>
+              <strong>UX Journey</strong><br>
+              <span style="opacity: 0.85; font-size: 11px;">Wireframing &bull; 0% Funnel Drop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ARTICLE INFORMATION BAR & CLEAN BREADCRUMBS -->
+  <div class="article-info-strip-container">
+    <div class="article-info-bar">
+      <!-- Clean Small Breadcrumbs -->
+      <nav class="breadcrumb-clean" aria-label="Breadcrumb">
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <span class="breadcrumb-sep">&gt;</span>
+        <a href="#ui-vs-ux">Design &amp; Tech Insights</a>
+        <span class="breadcrumb-sep">&gt;</span>
+        <span class="breadcrumb-active">UI vs. UX Explained</span>
+      </nav>
+
+      <!-- Key Metadata Badges -->
+      <div class="info-metrics-group">
+        <span class="info-metric-item">
+          <i class="fa-solid fa-layer-group"></i> <strong>Category:</strong> Product Design &amp; Strategy
+        </span>
+        <span class="info-metric-item">
+          <i class="fa-regular fa-clock"></i> <strong>Reading Time:</strong> 8 Min Read
+        </span>
+        <span class="info-metric-item badge-difficulty">
+          <i class="fa-solid fa-chart-line"></i> <strong>Difficulty:</strong> Beginner to Intermediate
+        </span>
+        <span class="info-metric-item">
+          <i class="fa-regular fa-calendar-check"></i> <strong>Updated:</strong> October 26, 2026
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN ARTICLE CONTAINER (Main Content + Sticky Sidebar) -->
+  <main id="outer-wrapper">
+    <div class="layout-grid">
+      
+      <!-- Primary Post Column: Divided into Modular Topic Section Cards -->
+      <div class="main-content-column">
+
+        <!-- SECTION 01: The Iceberg Analogy (Fundamentals) -->
+        <section class="content-section-card sec-iceberg" id="iceberg-analogy">
+          <header class="section-card-header">
+            <span class="section-pill-tag"><i class="fa-solid fa-water"></i> Topic 01 &bull; Fundamentals</span>
+            <h2 class="section-card-title"><i class="fa-solid fa-water" style="color: var(--electric-blue);"></i> The Iceberg Analogy: Surface vs. Substructure</h2>
+          </header>
+          <div class="post-body">
+            <!-- Lead Introduction -->
+            <p class="post-lead">
+              In modern technology, few terms are discussed as frequently—and misunderstood as often—as <strong>UI (User Interface)</strong> and <strong>UX (User Experience)</strong>. While many modern teams seek "UI/UX Designers" as a unified role, they represent two fundamentally different, mutually dependent disciplines of problem solving.
+            </p>
+
+            <!-- The 10-Second Definition Callout -->
+            <div class="callout-box">
+              <div class="callout-title">
+                <i class="fa-solid fa-lightbulb"></i> The 10-Second Distinction
+              </div>
+              <p>
+                <strong>UX (User Experience)</strong> is the internal architecture, mental psychology, and friction-free journey of how someone interacts with a product to solve a real need. <br>
+                <strong>UI (User Interface)</strong> is the sensory presentation—the typography, color systems, buttons, micro-animations, and visual hierarchy—through which that journey takes tangible form.
+              </p>
+            </div>
+
+            <p>
+              To understand why users fall in love with digital products, consider <strong>The Iceberg Analogy</strong>. What users see when launching an application is merely the 15% visible tip above the waterline: polished buttons, typography, responsive cards, and bouncy micro-interactions.
+            </p>
+
+            <!-- Iceberg Image Card -->
+            <div class="post-visual-card">
+              <img src="images/ui-ux-iceberg.jpg" alt="The Iceberg Analogy of UI vs UX Design" loading="lazy">
+              <div class="post-visual-caption">
+                <i class="fa-solid fa-circle-info"></i> The Iceberg Model: UI is the visible touchpoint, while UX represents the submerged foundation of user research and architecture.
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Sidebar Column (Sticky Table of Contents, Blogger Code, Popular Posts, Tags) -->
+      <aside class="sidebar-wrapper" id="sidebar">
+
+        <!-- Table of Contents Sticky Widget -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title-brandx">Table of Contents</h3>
+          <ul class="toc-list">
+            <li><a href="#intro" class="toc-link"><i class="fa-solid fa-angle-right"></i> Introduction</a></li>
+            <li><a href="#iceberg-analogy" class="toc-link"><i class="fa-solid fa-angle-right"></i> The Iceberg Analogy</a></li>
+            <li><a href="#ui-vs-ux" class="toc-link"><i class="fa-solid fa-angle-right"></i> UI vs UX Breakdown</a></li>
+            <li><a href="#design-process" class="toc-link"><i class="fa-solid fa-angle-right"></i> 5-Step Design Process</a></li>
+            <li><a href="#real-world-examples" class="toc-link"><i class="fa-solid fa-angle-right"></i> Real-World Examples</a></li>
+            <li><a href="#comparison-matrix" class="toc-link"><i class="fa-solid fa-angle-right"></i> Comparison Matrix</a></li>
+            <li><a href="#interactive-quiz" class="toc-link"><i class="fa-solid fa-angle-right"></i> Interactive Quiz</a></li>
+          </ul>
+        </div>
+
+        <!-- Blogger Code Modal Trigger Banner -->
+        <div class="blogger-export-banner">
+          <i class="fa-brands fa-blogger" style="font-size: 32px; color: var(--coral-orange); margin-bottom: 8px;"></i>
+          <h4>Need Blogger HTML?</h4>
+          <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 14px;">
+            Copy pre-formatted code ready for Google Blogger's post editor.
+          </p>
+          <button class="btn-open-modal" onclick="document.getElementById('export-modal').classList.add('active')">
+            <i class="fa-solid fa-code"></i> Copy Post Code
+          </button>
+        </div>
+
+        <!-- Popular Posts Widget -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title-brandx">Popular Insights</h3>
+          <ul class="popular-posts-list">
+            <li class="popular-post-item">
+              <div class="popular-post-thumb">
+                <img src="images/ui-ux-iceberg.jpg" alt="UI vs UX Iceberg">
+              </div>
+              <div class="popular-post-info">
+                <a href="#iceberg-analogy" class="popular-post-title">The Iceberg Model of Product Design</a>
+                <span class="popular-post-date"><i class="fa-solid fa-eye"></i> 14,290 Views</span>
+              </div>
+            </li>
+            <li class="popular-post-item">
+              <div class="popular-post-thumb">
+                <img src="images/ui-ux-examples.jpg" alt="Ride Sharing App UI vs UX">
+              </div>
+              <div class="popular-post-info">
+                <a href="#real-world-examples" class="popular-post-title">Deconstructing Uber &amp; SwiftRide Workflows</a>
+                <span class="popular-post-date"><i class="fa-solid fa-eye"></i> 9,840 Views</span>
+              </div>
+            </li>
+            <li class="popular-post-item">
+              <div class="popular-post-thumb">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=150&q=80" alt="Design Tokens">
+              </div>
+              <div class="popular-post-info">
+                <a href="#design-process" class="popular-post-title">Design Tokens: Bridge Between Figma &amp; Code</a>
+                <span class="popular-post-date"><i class="fa-solid fa-eye"></i> 7,120 Views</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Tags Cloud -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title-brandx">Categories &amp; Tags</h3>
+          <div class="label-cloud">
+            <a href="#ui-vs-ux" class="label-pill">UI Design</a>
+            <a href="#ui-vs-ux" class="label-pill">UX Research</a>
+            <a href="#design-process" class="label-pill">Design Systems</a>
+            <a href="#real-world-examples" class="label-pill">Case Studies</a>
+            <a href="#design-process" class="label-pill">Wireframing</a>
+            <a href="#interactive-quiz" class="label-pill">Usability</a>
+            <a href="#intro" class="label-pill">Figma</a>
+            <a href="#intro" class="label-pill">Naina Tech</a>
+          </div>
+        </div>
+
+      </aside>
+    </div> <!-- end layout-grid -->
+
+    <!-- FULL-WIDTH PAIRED ROW: Topic 02 & Topic 04 Covering Full Container Width -->
+    <div class="paired-topics-wrapper">
+      <div class="paired-sections-row">
+
+          <!-- SECTION 02: UI vs. UX Core Focus Breakdown & Synergy -->
+          <section class="content-section-card sec-uivsux" id="ui-vs-ux">
+            <header class="section-card-header">
+              <span class="section-pill-tag"><i class="fa-solid fa-columns"></i> Topic 02 &bull; Core Focus</span>
+              <h2 class="section-card-title"><i class="fa-solid fa-columns" style="color: var(--purple);"></i> UI vs. UX: Core Focus Breakdown</h2>
+            </header>
+            <div class="post-body">
+              <p>
+                Both disciplines require distinct skillsets, psychological approaches, and day-to-day deliverables. Here is how they compare side by side:
+              </p>
+
+              <div class="side-cards-grid">
+                <!-- UI Card (Purple & Blue Accents) -->
+                <div class="deep-dive-card ui-card">
+                  <div class="card-header-badge">
+                    <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+                    <div>
+                      <span class="card-badge">Visual &bull; Aesthetics</span>
+                      <h3 class="card-title">UI Design</h3>
+                    </div>
+                  </div>
+                  <p>Focuses on the visual appearance, typography, color harmony, buttons, and layout hierarchy.</p>
+                  <ul class="feature-list">
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Visual Appearance:</strong> Layout rhythm, contrast ratios, and cohesive design systems.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Typography &amp; Colors:</strong> Curated font hierarchies, brand palettes, and dark mode adaptations.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Interactive Buttons:</strong> Tactile feedback, default, hover, focused, and disabled states.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Primary Tools:</strong> Figma, Framer, Principle, Adobe Illustrator.</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- UX Card (Teal & Green Accents) -->
+                <div class="deep-dive-card ux-card">
+                  <div class="card-header-badge">
+                    <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                      <span class="card-badge">Strategy &bull; Psychology</span>
+                      <h3 class="card-title">UX Design</h3>
+                    </div>
+                  </div>
+                  <p>Focuses on user research, intuitive navigation, usability testing, and seamless user journeys.</p>
+                  <ul class="feature-list">
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>User Research:</strong> Empathy mapping, user interviews, and behavioral analytics.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Navigation &amp; IA:</strong> Intuitive categorization and effortless finding of critical features.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>User Journeys:</strong> Mapping the shortest, friction-free path from intent to completion.</span>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-check-circle feature-check"></i>
+                      <span><strong>Primary Tools:</strong> FigJam, Miro, Maze, Hotjar, UserTesting.</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Prominent Statement Banner -->
+              <div class="synergy-statement-banner">
+                <h3 class="synergy-title">UI + UX = <span class="synergy-highlight">Better Digital Experiences.</span></h3>
+                <p class="synergy-desc">
+                  When aesthetic beauty meets seamless utility, users feel empowered, delighted, and confident. One cannot thrive without the other.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 04: The 5-Step Digital Product Design Process -->
+          <section class="content-section-card sec-process" id="design-process">
+            <header class="section-card-header">
+              <span class="section-pill-tag"><i class="fa-solid fa-timeline"></i> Topic 04 &bull; Workflow &amp; Methodology</span>
+              <h2 class="section-card-title"><i class="fa-solid fa-timeline" style="color: var(--teal);"></i> The 5-Step Product Design Process</h2>
+            </header>
+            <div class="post-body">
+              <p>
+                World-class product teams do not design in silos. They follow an iterative five-step lifecycle ensuring both UX validation and UI refinement:
+              </p>
+
+              <div class="timeline-section-container">
+                <div class="timeline-header">
+                  <h3>From Concept to Production</h3>
+                  <p>How UX research naturally transitions into high-fidelity UI craftsmanship.</p>
+                </div>
+
+                <div class="process-steps-track">
+                  <!-- Step 1 -->
+                  <div class="process-step-item step-1">
+                    <div class="step-number-bubble">01</div>
+                    <div class="step-content-wrap">
+                      <h4 class="step-name">Research</h4>
+                      <p class="step-desc">User interviews, competitive benchmarking, and problem definition.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 2 -->
+                  <div class="process-step-item step-2">
+                    <div class="step-number-bubble">02</div>
+                    <div class="step-content-wrap">
+                      <h4 class="step-name">Wireframe</h4>
+                      <p class="step-desc">Information architecture, low-fi wireframes, and journey mapping.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 3 -->
+                  <div class="process-step-item step-3">
+                    <div class="step-number-bubble">03</div>
+                    <div class="step-content-wrap">
+                      <h4 class="step-name">UI Design</h4>
+                      <p class="step-desc">High-fidelity mockups, design tokens, typography, and component systems.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 4 -->
+                  <div class="process-step-item step-4">
+                    <div class="step-number-bubble">04</div>
+                    <div class="step-content-wrap">
+                      <h4 class="step-name">Testing</h4>
+                      <p class="step-desc">Interactive usability testing, cognitive walkthroughs, and feedback analysis.</p>
+                    </div>
+                  </div>
+
+                  <!-- Step 5 -->
+                  <div class="process-step-item step-5">
+                    <div class="step-number-bubble">05</div>
+                    <div class="step-content-wrap">
+                      <h4 class="step-name">Launch &amp; Improve</h4>
+                      <p class="step-desc">Production deployment, analytics monitoring, and continuous iteration.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+      </div>
+    </div> <!-- end paired-topics-wrapper -->
+
+    <!-- FULL-WIDTH SECTION 03: Real-World Examples in Action -->
+    <div class="single-topic-wrapper">
+
+        <!-- SECTION 03: Real-World Examples in Action -->
+        <section class="content-section-card sec-examples" id="real-world-examples">
+          <header class="section-card-header">
+            <span class="section-pill-tag"><i class="fa-solid fa-cubes"></i> Topic 03 &bull; Case Studies</span>
+            <h2 class="section-card-title"><i class="fa-solid fa-cubes" style="color: var(--coral-orange);"></i> Real-World Examples: UI vs. UX in Action</h2>
+          </header>
+          <div class="post-body">
+            <p>
+              How do these principles translate to the applications we rely on every single day? Let us analyze three industry-defining applications:
+            </p>
+
+            <div class="real-world-grid">
+              <!-- Example 1: E-Commerce -->
+              <div class="example-card">
+                <div class="example-card-header">
+                  <div class="example-icon-box icon-ecommerce">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                  <div>
+                    <div class="example-industry">Retail &bull; E-Commerce</div>
+                    <div class="example-app-name">Amazon / Shopify</div>
+                  </div>
+                </div>
+                <div class="example-divider"></div>
+                <div class="example-ui-point">
+                  <span class="pill-ui-tag">UI Focus</span><br>
+                  High-contrast "Buy Now" button colors, crisp zoomable product photo galleries, clear star ratings, and clean price badges.
+                </div>
+                <div class="example-ux-point">
+                  <span class="pill-ux-tag">UX Focus</span><br>
+                  1-Click checkout that bypasses tedious form fills, address autofill, transparent delivery dates, and frictionless guest checkout.
+                </div>
+              </div>
+
+              <!-- Example 2: Food Delivery -->
+              <div class="example-card">
+                <div class="example-card-header">
+                  <div class="example-icon-box icon-delivery">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div>
+                    <div class="example-industry">On-Demand &bull; Delivery</div>
+                    <div class="example-app-name">DoorDash / UberEats</div>
+                  </div>
+                </div>
+                <div class="example-divider"></div>
+                <div class="example-ui-point">
+                  <span class="pill-ui-tag">UI Focus</span><br>
+                  Vibrant dish photos, dietary badges (Vegan, Keto), smooth accordion menus, and clean floating cart bottom-sheets.
+                </div>
+                <div class="example-ux-point">
+                  <span class="pill-ux-tag">UX Focus</span><br>
+                  Live GPS courier tracking on map with minute-by-minute ETA, past-order reordering, and an order modification grace period.
+                </div>
+              </div>
+
+              <!-- Example 3: Banking / Fintech -->
+              <div class="example-card">
+                <div class="example-card-header">
+                  <div class="example-icon-box icon-banking">
+                    <i class="fa-solid fa-building-columns"></i>
+                  </div>
+                  <div>
+                    <div class="example-industry">Finance &bull; Fintech</div>
+                    <div class="example-app-name">Revolut / Apple Card</div>
+                  </div>
+                </div>
+                <div class="example-divider"></div>
+                <div class="example-ui-point">
+                  <span class="pill-ui-tag">UI Focus</span><br>
+                  Sleek dark-mode virtual card graphics, color-coded spending category badges, and smooth biometric face-unlock animations.
+                </div>
+                <div class="example-ux-point">
+                  <span class="pill-ux-tag">UX Focus</span><br>
+                  1-tap emergency card freeze/unfreeze, transparent fee breakdowns with zero hidden costs, and instant fraud verification alerts.
+                </div>
+              </div>
+            </div>
+
+            <!-- Featured Ride Sharing Case Study Diagram -->
+            <div class="post-visual-card">
+              <img src="images/ui-ux-examples.jpg" alt="SwiftRide Mobile App UI vs UX Breakdown" loading="lazy">
+              <div class="post-visual-caption">
+                <i class="fa-solid fa-mobile-screen"></i> SwiftRide Case Study: Visual button feedback and map styling (UI) alongside driver arrival timelines and transparent pricing (UX).
+              </div>
+            </div>
+          </div>
+        </section>
+    </div> <!-- end single-topic-wrapper -->
+
+    <!-- PAIRED ROW: Topic 05 & Topic 06 Side by Side Covering Full Container Width -->
+    <div class="paired-topics-wrapper paired-topics-5-6">
+      <div class="paired-sections-row">
+
+        <!-- SECTION 05: Comprehensive Comparison Matrix -->
+        <section class="content-section-card sec-matrix" id="comparison-matrix">
+          <header class="section-card-header">
+            <span class="section-pill-tag"><i class="fa-solid fa-table"></i> Topic 05 &bull; Synthesis &amp; Reference</span>
+            <h2 class="section-card-title"><i class="fa-solid fa-table" style="color: #2563eb;"></i> Comprehensive Comparison Matrix</h2>
+          </header>
+          <div class="post-body">
+            <p>
+              A quick-reference synthesis of how UI and UX function across key product dimensions:
+            </p>
+
+            <div class="table-responsive">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th class="th-dimension">Dimension</th>
+                    <th class="th-ui"><i class="fa-solid fa-palette"></i> UI Design</th>
+                    <th class="th-ux"><i class="fa-solid fa-brain"></i> UX Design</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Primary Focus</strong></td>
+                    <td>Visual appearance, aesthetic delight, and interactive touchpoints.</td>
+                    <td>End-to-end workflow, cognitive ease, and user satisfaction.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Core Activities</strong></td>
+                    <td>Creating style guides, vector iconography, motion curves, and layout spacing.</td>
+                    <td>Conducting user interviews, mapping user personas, and wireframing flows.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Key Deliverables</strong></td>
+                    <td>
+                      <span class="badge-tag badge-ui">Design Systems</span>
+                      <span class="badge-tag badge-ui">UI Kits</span>
+                      <span class="badge-tag badge-ui">High-Fi Prototypes</span>
+                    </td>
+                    <td>
+                      <span class="badge-tag badge-ux">User Personas</span>
+                      <span class="badge-tag badge-ux">Journey Maps</span>
+                      <span class="badge-tag badge-ux">Usability Reports</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>Success Measures</strong></td>
+                    <td>Brand consistency, visual appeal, accessibility contrast (WCAG).</td>
+                    <td>Task completion rate, drop-off rate, Time-on-Task, NPS score.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Primary Tools</strong></td>
+                    <td>Figma, Framer, Principle, Adobe Illustrator.</td>
+                    <td>FigJam, Miro, Maze, Hotjar, UserTesting.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cognitive Principle</strong></td>
+                    <td>Gestalt principles of visual grouping, color theory, aesthetic-usability effect.</td>
+                    <td>Hick's Law (decision time), Fitts's Law, cognitive load minimization.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 06: Functional Interactive Quiz -->
+        <section class="content-section-card sec-quiz" id="interactive-quiz">
+          <header class="section-card-header">
+            <span class="section-pill-tag"><i class="fa-solid fa-clipboard-question"></i> Topic 06 &bull; Interactive Challenge</span>
+            <h2 class="section-card-title"><i class="fa-solid fa-clipboard-question" style="color: #7c3aed;"></i> Interactive Quiz: Test Your UI vs. UX Knowledge</h2>
+          </header>
+          <div class="post-body">
+            <!-- Compact Initial State: Heading + Description + Start Quiz Button + Conclusion -->
+            <div class="quiz-teaser-box">
+              <p class="quiz-teaser-desc">
+                Put your design knowledge to the test! Try our interactive 4-scenario challenge to see how accurately you can distinguish between visual UI craftsmanship and behavioral UX psychology.
+              </p>
+              <div class="quiz-action-wrap">
+                <button type="button" class="btn-start-quiz" id="btn-toggle-quiz">
+                  <i class="fa-solid fa-circle-play"></i> Start Quiz (4 Questions)
+                </button>
+              </div>
+
+              <!-- Conclusion Block (Down of Quiz Button) -->
+              <div class="section-conclusion-card">
+                <div class="conclusion-header">
+                  <span class="conclusion-pill"><i class="fa-solid fa-flag-checkered"></i> Conclusion</span>
+                  <h3 class="conclusion-heading">Bridging Aesthetic UI with Strategic UX</h3>
+                  <p class="conclusion-text">
+                    A successful product is never just about how it looks, nor is it purely about how it functions. When aesthetic elegance and frictionless psychology unite, user delight turns into sustainable product growth. Get in touch with <strong>Naina Technologies</strong> for world-class design &amp; technology solutions:
+                  </p>
+                </div>
+
+                <div class="conclusion-contact-grid">
+                  <a href="tel:+919866037733" class="conclusion-contact-item item-phone" title="Call Naina Technologies">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-text-wrap">
+                      <span class="contact-label">Phone</span>
+                      <strong class="contact-val">+91 98660 37733</strong>
+                    </div>
+                  </a>
+
+                  <a href="mailto:enquiry@nainatechnologies.in" class="conclusion-contact-item item-email" title="Email Naina Technologies">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-text-wrap">
+                      <span class="contact-label">Email</span>
+                      <strong class="contact-val">enquiry@nainatechnologies.in</strong>
+                    </div>
+                  </a>
+
+                  <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener noreferrer" class="conclusion-contact-item item-web" title="Visit Naina Technologies Website">
+                    <div class="contact-icon-bubble"><i class="fa-solid fa-globe"></i></div>
+                    <div class="contact-text-wrap">
+                      <span class="contact-label">Website</span>
+                      <strong class="contact-val">www.nainatechnologies.in</strong>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quiz Questions Container (Hidden by default, displayed on button click) -->
+            <div class="interactive-quiz-container quiz-questions-collapsed" id="quiz-questions-wrapper">
+              <div class="quiz-top-bar">
+                <div class="quiz-title-group">
+                  <h3>UI/UX Knowledge Challenge</h3>
+                  <p>Answer all 4 questions to unlock your design evaluation.</p>
+                </div>
+                <div class="quiz-live-score" id="quiz-score-display">Score: 0 / 4</div>
+              </div>
+
+              <!-- Question 1 -->
+              <div class="quiz-question-box" data-q-index="1">
+                <div class="quiz-q-title">1. Choosing an accessible color palette and scalable font hierarchy so visually impaired users can read invoices easily.</div>
+                <div class="quiz-btn-group">
+                  <button type="button" class="quiz-btn" data-answer="correct">UI Design</button>
+                  <button type="button" class="quiz-btn" data-answer="wrong">UX Design</button>
+                </div>
+                <div class="quiz-explanation"></div>
+              </div>
+
+              <!-- Question 2 -->
+              <div class="quiz-question-box" data-q-index="2">
+                <div class="quiz-q-title">2. Analyzing funnel analytics to identify why 38% of users abandon onboarding during phone number verification.</div>
+                <div class="quiz-btn-group">
+                  <button type="button" class="quiz-btn" data-answer="wrong">UI Design</button>
+                  <button type="button" class="quiz-btn" data-answer="correct">UX Design</button>
+                </div>
+                <div class="quiz-explanation"></div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="quiz-question-box" data-q-index="3">
+                <div class="quiz-q-title">3. Crafting a smooth spring-physics micro-animation when a user likes a post or toggles dark mode.</div>
+                <div class="quiz-btn-group">
+                  <button type="button" class="quiz-btn" data-answer="correct">UI Design</button>
+                  <button type="button" class="quiz-btn" data-answer="wrong">UX Design</button>
+                </div>
+                <div class="quiz-explanation"></div>
+              </div>
+
+              <!-- Question 4 -->
+              <div class="quiz-question-box" data-q-index="4">
+                <div class="quiz-q-title">4. Restructuring an app's primary menu navigation into categories based on card-sorting user research sessions.</div>
+                <div class="quiz-btn-group">
+                  <button type="button" class="quiz-btn" data-answer="wrong">UI Design</button>
+                  <button type="button" class="quiz-btn" data-answer="correct">UX Design</button>
+                </div>
+                <div class="quiz-explanation"></div>
+              </div>
+
+              <!-- Quiz Final Result Summary -->
+              <div id="quiz-final-result">
+                <h4 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--primary-navy); margin-bottom: 8px;">Quiz Completed!</h4>
+                <p id="quiz-final-text" style="font-size: 14px; color: var(--text-main); margin-bottom: 12px;"></p>
+                <button type="button" class="btn-restart-quiz" id="btn-restart-quiz">
+                  <i class="fa-solid fa-arrow-rotate-right"></i> Retake Quiz
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div> <!-- end paired-topics-5-6 -->
+  </main>
+
+  <!-- 9. MAIN FOOTER (Naina Technologies Showcase & Contact Details) -->
+  <footer id="footer-widgets-container">
+    <div class="footer-inner">
+      <!-- Column 1: About Naina Technologies -->
+      <div class="footer-col footer-col-about">
+        <div class="footer-logo-wrap" style="margin-bottom: 18px;">
+          <img src="images/logo.png" alt="Naina Technologies" class="footer-logo-img">
+        </div>
+        <h3>About Naina Technologies</h3>
+        <p>
+          <strong>Naina Technologies</strong> is an industry-leading technology innovation and digital product company. We engineer high-performance web applications, bespoke enterprise software, and user-centric UI/UX design systems that accelerate business growth and elevate digital experiences.
+        </p>
+        <div class="footer-social-strip">
+          <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener noreferrer" aria-label="Website" title="Official Website"><i class="fa-solid fa-globe"></i></a>
+          <a href="mailto:enquiry@nainatechnologies.in" aria-label="Email" title="Send Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+919866037733" aria-label="Phone" title="Call Us"><i class="fa-solid fa-phone"></i></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Explore Guide -->
+      <div class="footer-col footer-col-links">
+        <h3>Explore Guide</h3>
+        <ul class="footer-links">
+          <li><a href="#intro"><i class="fa-solid fa-chevron-right"></i> Introduction</a></li>
+          <li><a href="#ui-vs-ux"><i class="fa-solid fa-chevron-right"></i> UI vs UX Breakdown</a></li>
+          <li><a href="#iceberg-analogy"><i class="fa-solid fa-chevron-right"></i> The Iceberg Model</a></li>
+          <li><a href="#real-world-examples"><i class="fa-solid fa-chevron-right"></i> Real-World Case Studies</a></li>
+          <li><a href="#design-process"><i class="fa-solid fa-chevron-right"></i> 5-Step Design Process</a></li>
+          <li><a href="#comparison-matrix"><i class="fa-solid fa-chevron-right"></i> Comparison Matrix</a></li>
+          <li><a href="#interactive-quiz"><i class="fa-solid fa-chevron-right"></i> Interactive Quiz</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Naina Technologies Details -->
+      <div class="footer-col footer-col-contact">
+        <h3>Contact Naina Technologies</h3>
+        <p class="footer-contact-intro">
+          Ready to build your next breakthrough digital product or collaborate on intuitive UI/UX design? Connect directly with our team:
+        </p>
+        
+        <div class="footer-contact-list">
+          <!-- Phone -->
+          <a href="tel:+919866037733" class="footer-contact-card" title="Call Naina Technologies">
+            <div class="f-contact-icon icon-phone"><i class="fa-solid fa-phone"></i></div>
+            <div class="f-contact-info">
+              <span class="f-contact-label">Phone Support</span>
+              <span class="f-contact-val">+91 98660 37733</span>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:enquiry@nainatechnologies.in" class="footer-contact-card" title="Email Naina Technologies">
+            <div class="f-contact-icon icon-email"><i class="fa-solid fa-envelope"></i></div>
+            <div class="f-contact-info">
+              <span class="f-contact-label">Email Inquiries</span>
+              <span class="f-contact-val">enquiry@nainatechnologies.in</span>
+            </div>
+          </a>
+
+          <!-- Website -->
+          <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener noreferrer" class="footer-contact-card" title="Visit Naina Technologies Website">
+            <div class="f-contact-icon icon-globe"><i class="fa-solid fa-globe"></i></div>
+            <div class="f-contact-info">
+              <span class="f-contact-label">Official Website</span>
+              <span class="f-contact-val">www.nainatechnologies.in</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="footer-badge-box">
+          <i class="fa-solid fa-award" style="color: #f59e0b;"></i>
+          <span>Delivering Excellence in UI/UX &amp; Software Solutions</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright & Legal Strip -->
+  <div class="copyright-bar">
+    <div class="copyright-inner">
+      <div>
+        Copyright &copy; 2026 <strong>Naina Technologies</strong>. All rights reserved.
+      </div>
+      <div style="display: flex; gap: 16px;">
+        <a href="#intro">Privacy Policy</a>
+        <a href="#intro">Terms of Service</a>
+        <a href="https://www.nainatechnologies.in" target="_blank" rel="noopener noreferrer">www.nainatechnologies.in</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Modal for Blogger HTML / Markdown Export -->
+  <div class="modal-backdrop" id="export-modal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title"><i class="fa-brands fa-blogger"></i> Export Post for Blogger / Markdown</div>
+        <button class="modal-close-btn" id="close-export-modal-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-tabs">
+          <button type="button" class="modal-tab-btn active" data-tab="blogger-html">Blogger HTML View</button>
+          <button type="button" class="modal-tab-btn" data-tab="markdown">Markdown Format</button>
+        </div>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">
+          Copy and paste this snippet directly into Blogger's Post Editor (switch to <strong>HTML view</strong>) or your Markdown editor:
+        </p>
+        <div class="code-preview-box" id="modal-code-display">Loading snippet...</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-copy-code" id="btn-copy-modal-code">
+          <i class="fa-solid fa-copy"></i> Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
